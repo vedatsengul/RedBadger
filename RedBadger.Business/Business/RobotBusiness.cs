@@ -30,6 +30,8 @@ namespace RedBadger.Business.Business
             }
         }
 
+        #region Move Robot
+
         private void MoveForward(Mars planet, Robot robot)
         {
             switch (robot.Direction)
@@ -126,6 +128,8 @@ namespace RedBadger.Business.Business
 
             robot.X = newX;
         }
+
+        #endregion
 
         private void RotateLeft(Robot robot)
         {
